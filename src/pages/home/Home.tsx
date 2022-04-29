@@ -269,7 +269,7 @@ export const HomePage = () => {
         <div className='carousel w-full mx-auto md:max-w-[960px] lg:max-w-[1020px] xl:max-w-[1230px] '>
           {!isNil(mediaBox) ? (
             mediaBox.map((item: MediaBox, index: number) => (
-              <>
+              <div key={index}>
                 <div
                   id={index.toString()}
                   className='carousel-item relative w-full'
@@ -279,7 +279,7 @@ export const HomePage = () => {
                     className='w-full max-h-[480px] object-cover'
                   />
                 </div>
-              </>
+              </div>
             ))
           ) : (
             <></>
@@ -288,14 +288,14 @@ export const HomePage = () => {
         <div className='flex justify-center w-full py-2 gap-2'>
           {!isNil(mediaBox) ? (
             mediaBox.map((item: MediaBox, index: number) => (
-              <>
-                <a href={`#${index}`} className='p-4 '>
+              <div key={index}>
+                <a href={`#${index}`} className='p-4'>
                   <FontAwesomeIcon
                     className=' hover:text-blue text-[#e4e4e4] text-base font-black antialiased inline-block not-italic'
                     icon={faMinus}
                   />
                 </a>
-              </>
+              </div>
             ))
           ) : (
             <></>

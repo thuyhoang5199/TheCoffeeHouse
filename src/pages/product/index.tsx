@@ -269,7 +269,10 @@ export const ProductListingPage = () => {
         id='modalSearchProduct'
         className='modal-toggle '
       />
-      <label htmlFor='modalSearchProduct' className='modal cursor-pointer  '>
+      <label
+        htmlFor='modalSearchProduct'
+        className='modal cursor-pointer z-[9999] '
+      >
         <label
           className='modal-box relative p-0 w-full max-w-2xl h-full md:h-auto'
           htmlFor=''

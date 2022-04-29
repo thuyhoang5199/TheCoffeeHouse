@@ -23,8 +23,8 @@ export const CheckoutPage = () => {
       setCoupon(get(data, '[0].campaigns', []));
     }
   }, [data]);
-  console.log('coupon', coupon);
-  console.log('dataPromotion', dataPromotion);
+  // console.log('coupon', coupon);
+  // console.log('dataPromotion', dataPromotion);
 
   if (error) {
     console.log(error.message);
@@ -88,7 +88,9 @@ export const CheckoutPage = () => {
         khuyen mai
       </button>
 
-      <button onClick={resetCarts}>xóa đơn hàng</button>
+      <button onClick={resetCarts} className=''>
+        Xóa đơn hàng
+      </button>
       <ModalPromotion coupon={coupon} dataPromotion={dataPromotion} />
     </div>
   );

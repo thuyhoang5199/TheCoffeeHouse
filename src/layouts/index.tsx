@@ -76,7 +76,7 @@ export const Layout = () => {
                 Tại: Nhập địa chỉ giao hàng
               </p>
             </div>
-            <button className='pl-2'>
+            <label className='pl-2' htmlFor='modalAddress'>
               {' '}
               <svg
                 className='text-orange-300 h-5 w-3.5'
@@ -91,7 +91,7 @@ export const Layout = () => {
                   clipRule='evenodd'
                 />
               </svg>
-            </button>
+            </label>
           </label>
 
           <nav className='flex hidden lg:block'>

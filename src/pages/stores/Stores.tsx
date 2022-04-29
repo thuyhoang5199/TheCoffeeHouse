@@ -40,7 +40,6 @@ export const StorePage = () => {
   //   }
   // };
 
-  console.log('jojojoj', stores);
   if (error) {
     console.log(error.message);
   }

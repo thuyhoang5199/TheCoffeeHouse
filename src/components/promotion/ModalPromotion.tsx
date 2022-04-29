@@ -44,7 +44,10 @@ export const ModalPromotion = ({
   return (
     <div>
       <input type='checkbox' id='modalPromotions' className='modal-toggle' />
-      <label htmlFor='modalPromotions' className='modal cursor-pointer'>
+      <label
+        htmlFor='modalPromotions'
+        className='modal cursor-pointer z-[9999]'
+      >
         <label className='modal-box sm:w-[402px] p-0 relative' htmlFor=''>
           <div className='p-2 flex items-center border-b  '>
             <label

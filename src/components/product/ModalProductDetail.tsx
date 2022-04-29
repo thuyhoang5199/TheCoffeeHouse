@@ -36,7 +36,10 @@ export const ModalProductDetail = ({
   return (
     <div>
       <input type='checkbox' id='modalProductDetail' className='modal-toggle' />
-      <label htmlFor='modalProductDetail' className='modal cursor-pointer'>
+      <label
+        htmlFor='modalProductDetail'
+        className='modal cursor-pointer z-[9999]'
+      >
         <label
           className='modal-box relative p-0 w-full  max-w-md h-full md:h-auto'
           htmlFor=''
